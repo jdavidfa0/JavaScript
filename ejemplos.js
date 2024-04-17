@@ -8,6 +8,7 @@ let resta= num1-num2;
 let multi = num1*num2;
 let divi = num1/num2;
 
+
 if(num1>num2)
 {
     document.write(`<br> La suma es: ${suma}`);
