@@ -42,7 +42,6 @@ function clasificar(){
     }
 }
    
-
 console.log((personitas));
 registrar();
 clasificar();

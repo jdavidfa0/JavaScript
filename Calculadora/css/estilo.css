@@ -1,0 +1,87 @@
+ul{
+    list-style: none;
+    display: inline;
+
+}
+li{
+    display: inline;
+    border: solid;
+    border-color: #4da768;;
+    background-color:#99e89d;
+    border-radius: 10px;
+    padding: 5%;
+    font-size: 25px;
+    
+}
+li:hover{
+    background-color:#5a9976;
+}
+.fila1{
+
+    text-align: center;
+    padding: 6%;
+
+}
+.fila2{
+
+    text-align: center;
+    padding: 6%;
+    margin-left: 2.1px;
+}
+.fila3{
+    
+    text-align: center;
+    padding: 6%;
+    margin-left: -5px;
+}
+.fila4{
+    text-align: center;
+    padding: 6%;
+    margin-left: -5px;
+
+}
+.container{
+    border: solid;
+    border-color: var(--color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    --color: #066330;
+    background-color: #d0fddf;
+
+}
+
+.operaciones{
+    border: solid;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #4da768;
+    background-color: aliceblue;
+    font-size: 25px;
+}
+.container1{
+    padding-top: 10px;
+    width: 350px;
+
+}
+.boton{
+    padding: 10px;
+    margin-left: 135px;
+    margin-top: 20px;
+    margin-right: auto;
+     border-radius: 10px;
+    border-color: #066330;
+    background-color:#4da768;
+}
+.igual,.decimal,.cubo,.pi,.cos,.raiz{
+    background-color: #4da768;
+}
+.simbolo{
+    background-color:#76bb8d ;
+}
