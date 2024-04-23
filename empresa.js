@@ -32,17 +32,16 @@ do{
     i++;
 } while(i<=2);
 
-
-let edadtope=60;
-let edadpersona= personitas[0].edad1;
-
-if (edadtope>edadpersona){
-document.write(`La persona ${personitas[0].nombre1} no calsifica`);
-}else if (edadpersona>= edadtope){
-document.write(`La persona ${personitas[0].nombre1} calsifica`);
+function clasificar(){
+     for( let x in personitas){
+        if( personitas[x].edad>=empresa1.edadtope ){
+            document.write(`<br>${personitas[x].nombre} no es aptx para el trabajo <br>`);
+        }else if (personitas[x].edad<empresa1.edadtope ){
+            document.write(`<br>${personitas[x].nombre} es aptx para el trabajo <br>`);
+        }
+    }
 }
-
-
+   
 
 console.log((personitas));
 registrar();
