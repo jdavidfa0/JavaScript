@@ -4,13 +4,15 @@ ul{
 
 }
 li{
-    display: inline;
+    display: inline-block;
     border: solid;
     border-color: #4da768;;
     background-color:#99e89d;
     border-radius: 10px;
-    padding: 5%;
-    font-size: 25px;
+    padding: 5.2%;
+    font-size: 30px;
+    margin-bottom: -40px;
+   
     
 }
 li:hover{
@@ -21,23 +23,24 @@ li:hover{
     text-align: center;
     padding: 6%;
 
+
+
 }
 .fila2{
 
     text-align: center;
     padding: 6%;
-    margin-left: 2.1px;
+
 }
 .fila3{
     
     text-align: center;
     padding: 6%;
-    margin-left: -5px;
+
 }
 .fila4{
     text-align: center;
     padding: 6%;
-    margin-left: -5px;
 
 }
 .container{
