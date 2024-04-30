@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/formulario/css/estilo.css">
+</head>
+<body>
+    <p>FORMULARIO DE REGISTRO</p>
+    <div id="formulario">
+        <form onsubmit="return validar()">
+            <label>NOMBRE</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre">
+            <label>APELLIDO</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido">
+            <label>EMAIL</label>
+            <input type="email" id="correo" name="correo"placeholder="Ingrese Correo">
+            <label >USUARIO</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese Usuario">
+            <label> CONTRASEÑA</label>
+            <input type="password" id="contra" name="contra" placeholder="Ingrese Consraseña">
+
+            <input type="submit" value="REGISTRARSE">
+        
+        
+        </form>
+    </div>
+   
+</body>
+<script src="/formulario/javascript/validar.js"></script>
+</html>
