@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/formulario/css/estilo2.css">
+</head>
+<body>
+    <DIV style="border: solid; width: 22.5%; margin-right: auto; margin-left: auto; color: aliceblue; background-color:black;">
+        <p>INGRESE SUS DATOS</p>
+    </DIV>
+    <div id="formulario">
+        <form onsubmit="return validar()">
+                    <label >USUARIO</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese Usuario">
+            <label>EMAIL</label>
+            <input type="email" id="correo" name="correo"placeholder="Ingrese Correo">
+            <label> CONTRASEÑA</label>
+            <input type="password" id="contra" name="contra" placeholder="Ingrese Consraseña">
+            <label for="">CIUDAD</label><br>
+
+            <select name="ciudad" id="ciudad">
+                <option value="seleccionar" >Seleccionar ciudad</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Medellin" >Medellin</option>
+                <option value="Barranquilla">Barranquilla</option>
+            </select>
+            <label name="pasa" id="pasa">PASATIEMPOS</label>
+                <div style="text-align: justify; font-size: 25px;">
+                    <input type="checkbox" value="Caminar">
+                        <label for="">Caminar</label><br>
+                    <input type="checkbox" value="Nadar">
+                        <label for="">Nadar </label><br>
+                    <input type="checkbox" value="Leer">
+                        <label for="">Leer </label><br>
+                    <input type="checkbox" value="Musica">
+                        <label for="">Escuchar Música</label> <br>
+                    <input type="checkbox" value="Dormir">
+                        <label for="">Dormir</label> <br>
+                </div>
+            <label>Género</label><br>
+                <div style="text-align: justify; font-size: 25px;" >
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label><br>
+                    <input type="radio" name="genero" id="femenino" value="femenino">
+                        <label for="femenino">Femenino</label><br>
+                </div>
+
+            <input type="submit" value="REGISTRARSE">
+        
+        
+        </form>
+    </div>
+   
+</body>
+<script src="/formulario/javascript/formulario2.js"></script>
+</html>
