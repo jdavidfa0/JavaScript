@@ -16,10 +16,11 @@ function validar(){
         
      }
 
+
  }
 function pasatiempo(){
     var pasa = document.querySelector('input[type="checkbox"]').value;
-    
+
     if(!pasa){
         alert =("Porfavor seleccione Pasatiempos");
         return false;
@@ -29,8 +30,9 @@ function pasatiempo(){
 }
 
 function genero(){
-    var genero = document.querySelector('input[name="genero"]:checked').value;
-    if(!genero ){
+    var genero = document.querySelector('input[name="genero"]:checked');
+
+    if(!genero){
         alert("Seleccione un género");
         return false;
     }
