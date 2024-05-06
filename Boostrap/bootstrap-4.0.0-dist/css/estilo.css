@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(0, 0, 0);
+
+}
+header{
+    margin: 30px 0;
+
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: aliceblue ;
+    font-size: 22px;
+    margin-bottom: 30px;
+
+}
+.principal{
+    background-color: rgb(172, 208, 240);
+    padding: 30px;
+    border-radius: 30px;
+}
+.contenedor{
+    padding: 20px;
+    
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-size: 22px;
+
+}
+.presupuesto p{
+    margin-bottom: 0;
+    font-weight: bold;
+
+}
+.presupuesto span{
+    font-weight: normal;
+}
+#gastos{
+    margin-bottom: 30px;
+}

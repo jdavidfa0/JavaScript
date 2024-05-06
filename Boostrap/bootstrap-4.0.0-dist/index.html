@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1 class="text-center"> GASTOS SEMANALES</h1>
+        </header>
+        <section class="principal">
+            <div class="row">
+                <div class="col">
+                    <div class="contenido-gastos">
+                        <h2 class="text-center">AÑADE TUS GASTOS</h2>
+                        <form id="agregar-gasto" action="#">
+                            <div class="form-group">
+                                <label>Nombre del Gasto</label>
+                                <input type="text" class="form-control" id="gasto" placeholder="Nombre del Gasto">
+
+                            </div>
+                            <div class="form-group">
+                                <label>Cantidad</label>
+                                <input type="number" class="form-control" id="Cantidad" placeholder="Cantidad en pesos">
+                            </div>
+                            <button type="submit" class="btn btn-success">Agregar</button>
+
+                        </form>
+                    
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div  class="contenido-lista">
+                    
+                        <h2 class="text-center">LISTA DE GASTOS</h2>
+                        <div id="gastos">
+                            <ul class="list-group">
+
+                            </ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-success">
+                                <p>Presupuesto:<span id="total"></span></p>
+                            </div>
+                            <div class="restante alert alert-warning">
+                                <p> Restante: $<span id="restante"></span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                 </div>
+            </div>
+            
+
+        </section>
+    </div>
+    <script src="js/funcional.js"></script>
+</body>
+</html>
