@@ -50,7 +50,7 @@ class UI
             divmensaje.classList.add('alert-danger');
     
         }else{
-            divmensaje.classList.add('alert-sucess');
+            divmensaje.classList.add('alert-warning');
         } 
 
         divmensaje.textContent =mensaje;
@@ -100,15 +100,15 @@ class UI
         const restanteDiv = document.querySelector('.restante');
 
         if ((presupuesto/4)>restante ){
-            restanteDiv.classList.remove ('alert-sucess', 'alert-warning');
+            restanteDiv.classList.remove ('alert-warning', 'alert-warning');
 
         }else if ((presupuesto /2 )> restante){
-            restanteDiv.classList.remove ('alert-sucess');
+            restanteDiv.classList.remove ('alert-warning');
             restanteDiv.classList.add ('alert-warning');
 
         }else{
             restanteDiv.classList.remove('alert-danger', 'alert-warning');
-            restanteDiv.classList.add('alert-sucess');
+            restanteDiv.classList.add('alert-warning');
         }
 
         if(restante<=0){
@@ -149,7 +149,11 @@ function agregar(e){
 
     if (nombre ==='' || cantidad === ''){
         ui.imprimiralerta('Ambos campos son obligatorios', 'error');
-    }else{
+    } else if (isNaN(nombre)== false){
+        ui.imprimiralerta('El campo no debe llevar numeros');
+
+    }
+    else{
         const gasto= {nombre,cantidad,id: Date.now()}
 
         Presupuesto.nuevogasto(gasto);
@@ -164,6 +168,9 @@ function agregar(e){
         const { restante } =Presupuesto;
 
         ui.actualizar_restante(restante)
+        
+        organizarGastos();
+
 
         formulario.reset();
 
@@ -188,4 +195,17 @@ function eliminar(e){
 
     }
     
+}
+function organizarGastos() {
+ 
+    const gastosOrdenados = Presupuesto.gastos.sort((a, b) => b.cantidad - a.cantidad);
+
+   
+    const mayorGasto = gastosOrdenados[0];
+
+ 
+    const mensaje = `El mayor gasto es: ${mayorGasto.nombre} $${mayorGasto.cantidad}`;
+    ui.imprimiralerta(mensaje, 'info');
+
+    ui.agregarGastolistado(gastosOrdenados);
 }
